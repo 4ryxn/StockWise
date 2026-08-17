@@ -24,6 +24,26 @@ Accuracy dataset, store `CA_1`. It presents held-out LightGBM backtests, feature
 importance, and inventory-policy scenario results. These figures are precomputed project
 evidence, not live retailer data, and they do not change when a visitor uploads a CSV.
 
+## Screenshots
+
+### Inventory Planner
+
+![Inventory Planner](docs/screenshots/inventory-planner.png)
+
+Browser-local sales CSV planning and inventory recommendations.
+
+### Model Evidence
+
+![Model Evidence](docs/screenshots/model-evidence-overview.png)
+
+Held-out LightGBM backtest performance on M5 CA_1.
+
+### Inventory Policy Lab
+
+![Inventory Policy Lab](docs/screenshots/model-evidence-inventory-lab.png)
+
+Service-level and safety-stock scenario exploration.
+
 ## Results
 
 Lower WAPE is better. The global LightGBM model was evaluated on the same three held-out
