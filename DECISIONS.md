@@ -60,3 +60,11 @@ known when a forecast is made, so including them would make validation unrealist
 recursively feed predictions back into the 28-day forecast horizon.
 
 **Reason:** This matches forecast-time information availability and caps training-memory use.
+
+## ADR-009: Use a lost-sales inventory scenario backtest
+
+**Decision:** Simulate 7-day lead/review cycles with 95% target service, initialized from pre-fold
+demand history, and compare fixed historical versus forecast-driven order-up-to policies.
+
+**Reason:** M5 has sales rather than inventory positions, receipts, or unmet demand; results must
+be labelled as scenario simulations.

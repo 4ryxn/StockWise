@@ -21,8 +21,8 @@
 
 ## Milestone 3 - Inventory decisions (Days 13-16)
 
-- [ ] Convert forecast distributions into scenario inputs.
-- [ ] Backtest the reorder policy against a fixed-rule policy.
+- [x] Convert forecast distributions into scenario inputs.
+- [x] Backtest the reorder policy against a fixed-rule policy.
 - [ ] Report stockout, holding-cost, and service-level tradeoffs.
 
 ## Milestone 4 - Product and deployment (Days 17-25)

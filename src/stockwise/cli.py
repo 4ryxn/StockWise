@@ -16,6 +16,7 @@ from stockwise.forecasting import (
     write_lightgbm_artifacts,
 )
 from stockwise.inventory import InventoryScenario, recommend_order
+from stockwise.inventory_backtest import write_inventory_artifacts
 
 
 def run_demo() -> None:
@@ -71,6 +72,13 @@ def main() -> None:
     lightgbm_parser.add_argument("processed_dir", type=Path)
     lightgbm_parser.add_argument("output_dir", type=Path)
 
+    inventory_parser = subparsers.add_parser(
+        "backtest-inventory", help="Run inventory scenario simulation"
+    )
+    inventory_parser.add_argument("processed_dir", type=Path)
+    inventory_parser.add_argument("prediction_path", type=Path)
+    inventory_parser.add_argument("output_dir", type=Path)
+
     args = parser.parse_args()
     if args.command == "demo":
         run_demo()
@@ -92,3 +100,12 @@ def main() -> None:
         print(json.dumps(write_feature_profile(args.processed_dir, args.output_dir), indent=2))
     elif args.command == "backtest-lightgbm":
         print(json.dumps(write_lightgbm_artifacts(args.processed_dir, args.output_dir), indent=2))
+    elif args.command == "backtest-inventory":
+        print(
+            json.dumps(
+                write_inventory_artifacts(
+                    args.processed_dir, args.prediction_path, args.output_dir
+                ),
+                indent=2,
+            )
+        )
