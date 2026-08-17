@@ -15,7 +15,7 @@
 
 - [x] Create reproducible EDA outputs and business KPIs.
 - [x] Evaluate the seasonal-naive baseline on rolling origins.
-- [ ] Build leakage-safe lag and rolling-window features.
+- [x] Build leakage-safe lag and rolling-window features.
 - [ ] Train one global LightGBM model and track experiments.
 - [ ] Compare models overall and by department/category.
 

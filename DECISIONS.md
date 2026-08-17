@@ -46,3 +46,10 @@ a concrete deployment blocker appears.
 **Reason:** These match existing skills and minimize delivery risk. React, Kafka, Airflow,
 Kubernetes, deep learning, and LLM features are excluded from v1.
 
+## ADR-007: Use only known-in-advance features for demand modeling
+
+**Decision:** Build lags and rolling demand statistics from values strictly before the target day,
+retain known calendar fields, and exclude `sell_price`.
+
+**Reason:** Shifting before rolling prevents target leakage. Future M5 selling prices are not
+known when a forecast is made, so including them would make validation unrealistically optimistic.
