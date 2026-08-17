@@ -1,0 +1,907 @@
+{
+  "overview": {
+    "row_count": 5918109,
+    "item_count": 3049,
+    "wape": 0.6799097907198585,
+    "improvement": 22.285043142967595
+  },
+  "folds": [
+    {
+      "name": "fold_1",
+      "train_start_day": 1128,
+      "train_end_day": 1857,
+      "validation_start_day": 1858,
+      "validation_end_day": 1885,
+      "row_count": 85372,
+      "actual_units_sold": 125246,
+      "wape": 0.6829915234716821,
+      "mae": 1.0019907738923102,
+      "rmse": 2.266022579870675
+    },
+    {
+      "name": "fold_2",
+      "train_start_day": 1156,
+      "train_end_day": 1885,
+      "validation_start_day": 1886,
+      "validation_end_day": 1913,
+      "row_count": 85372,
+      "actual_units_sold": 127955,
+      "wape": 0.6754944391416123,
+      "mae": 1.0124266851000914,
+      "rmse": 2.2597337005428844
+    },
+    {
+      "name": "fold_3",
+      "train_start_day": 1184,
+      "train_end_day": 1913,
+      "validation_start_day": 1914,
+      "validation_end_day": 1941,
+      "row_count": 85372,
+      "actual_units_sold": 134032,
+      "wape": 0.6812452300997051,
+      "mae": 1.0695387326140147,
+      "rmse": 2.3629706467621716
+    }
+  ],
+  "categories": [
+    {
+      "fold": "fold_1",
+      "cat_id": "FOODS",
+      "row_count": "40236",
+      "actual_units_sold": "83475",
+      "wape": "0.6468339106111034",
+      "mae": "1.3419440473273152",
+      "rmse": "2.77686014031637"
+    },
+    {
+      "fold": "fold_1",
+      "cat_id": "HOBBIES",
+      "row_count": "15820",
+      "actual_units_sold": "14142",
+      "wape": "0.8608200341017254",
+      "mae": "0.7695143440117952",
+      "rmse": "2.189626718994599"
+    },
+    {
+      "fold": "fold_1",
+      "cat_id": "HOUSEHOLD",
+      "row_count": "29316",
+      "actual_units_sold": "27629",
+      "wape": "0.7012117245722189",
+      "mae": "0.6608602380340373",
+      "rmse": "1.335244046981022"
+    },
+    {
+      "fold": "fold_2",
+      "cat_id": "FOODS",
+      "row_count": "40236",
+      "actual_units_sold": "84668",
+      "wape": "0.6257194369209814",
+      "mae": "1.3166918502143767",
+      "rmse": "2.640681861801281"
+    },
+    {
+      "fold": "fold_2",
+      "cat_id": "HOBBIES",
+      "row_count": "15820",
+      "actual_units_sold": "15053",
+      "wape": "0.8338933243560589",
+      "mae": "0.7934637301853195",
+      "rmse": "2.3475007830283854"
+    },
+    {
+      "fold": "fold_2",
+      "cat_id": "HOUSEHOLD",
+      "row_count": "29316",
+      "actual_units_sold": "28234",
+      "wape": "0.7403088993273214",
+      "mae": "0.7129854503891251",
+      "rmse": "1.5251266589453862"
+    },
+    {
+      "fold": "fold_3",
+      "cat_id": "FOODS",
+      "row_count": "40236",
+      "actual_units_sold": "90833",
+      "wape": "0.63007247339782",
+      "mae": "1.4223922103624662",
+      "rmse": "2.8882759978310077"
+    },
+    {
+      "fold": "fold_3",
+      "cat_id": "HOBBIES",
+      "row_count": "15820",
+      "actual_units_sold": "15405",
+      "wape": "0.8526402140348531",
+      "mae": "0.8302732299119414",
+      "rmse": "2.317651060831774"
+    },
+    {
+      "fold": "fold_3",
+      "cat_id": "HOUSEHOLD",
+      "row_count": "29316",
+      "actual_units_sold": "27794",
+      "wape": "0.7534851121599107",
+      "mae": "0.7143663940296274",
+      "rmse": "1.3827753769861115"
+    },
+    {
+      "fold": "all_folds",
+      "cat_id": "FOODS",
+      "row_count": "120708",
+      "actual_units_sold": "258976",
+      "wape": "0.6340519853176809",
+      "mae": "1.3603427026347195",
+      "rmse": "2.7704567116735364"
+    },
+    {
+      "fold": "all_folds",
+      "cat_id": "HOBBIES",
+      "row_count": "47460",
+      "actual_units_sold": "44600",
+      "wape": "0.848906628497876",
+      "mae": "0.7977504347030188",
+      "rmse": "2.285952138214956"
+    },
+    {
+      "fold": "all_folds",
+      "cat_id": "HOUSEHOLD",
+      "row_count": "87948",
+      "actual_units_sold": "83657",
+      "wape": "0.7317740943278623",
+      "mae": "0.6960706941509299",
+      "rmse": "1.4166810666746483"
+    }
+  ],
+  "departments": [
+    {
+      "fold": "fold_1",
+      "dept_id": "FOODS_1",
+      "row_count": "6048",
+      "actual_units_sold": "9456",
+      "wape": "0.7490550944420804",
+      "mae": "1.1711416952784908",
+      "rmse": "2.3982037657481032"
+    },
+    {
+      "fold": "fold_1",
+      "dept_id": "FOODS_2",
+      "row_count": "11144",
+      "actual_units_sold": "15073",
+      "wape": "0.748411371130111",
+      "mae": "1.0122760765473944",
+      "rmse": "1.9610825144701316"
+    },
+    {
+      "fold": "fold_1",
+      "dept_id": "FOODS_3",
+      "row_count": "23044",
+      "actual_units_sold": "58946",
+      "wape": "0.6044615600409421",
+      "mae": "1.5461981912069682",
+      "rmse": "3.177169056324213"
+    },
+    {
+      "fold": "fold_1",
+      "dept_id": "HOBBIES_1",
+      "row_count": "11648",
+      "actual_units_sold": "12977",
+      "wape": "0.8473867843360415",
+      "mae": "0.944070939245262",
+      "rmse": "2.5061945901434632"
+    },
+    {
+      "fold": "fold_1",
+      "dept_id": "HOBBIES_2",
+      "row_count": "4172",
+      "actual_units_sold": "1165",
+      "wape": "1.0104537527362996",
+      "mae": "0.28216170228614307",
+      "rmse": "0.8025634666321944"
+    },
+    {
+      "fold": "fold_1",
+      "dept_id": "HOUSEHOLD_1",
+      "row_count": "14896",
+      "actual_units_sold": "21790",
+      "wape": "0.6402012400780809",
+      "mae": "0.9364920127082024",
+      "rmse": "1.687712629560885"
+    },
+    {
+      "fold": "fold_1",
+      "dept_id": "HOUSEHOLD_2",
+      "row_count": "14420",
+      "actual_units_sold": "5839",
+      "wape": "0.9288908574934845",
+      "mae": "0.37612993875897754",
+      "rmse": "0.825958628485277"
+    },
+    {
+      "fold": "fold_2",
+      "dept_id": "FOODS_1",
+      "row_count": "6048",
+      "actual_units_sold": "8017",
+      "wape": "0.7791921818787215",
+      "mae": "1.0328676789222404",
+      "rmse": "1.9608016629831193"
+    },
+    {
+      "fold": "fold_2",
+      "dept_id": "FOODS_2",
+      "row_count": "11144",
+      "actual_units_sold": "14999",
+      "wape": "0.731490673435925",
+      "mae": "0.9845323591946732",
+      "rmse": "1.8154869522335602"
+    },
+    {
+      "fold": "fold_2",
+      "dept_id": "FOODS_3",
+      "row_count": "23044",
+      "actual_units_sold": "61652",
+      "wape": "0.580029860381472",
+      "mae": "1.5518139625168594",
+      "rmse": "3.0939559534015872"
+    },
+    {
+      "fold": "fold_2",
+      "dept_id": "HOBBIES_1",
+      "row_count": "11648",
+      "actual_units_sold": "13992",
+      "wape": "0.8199413992326282",
+      "mae": "0.9849433428968865",
+      "rmse": "2.698379207053662"
+    },
+    {
+      "fold": "fold_2",
+      "dept_id": "HOBBIES_2",
+      "row_count": "4172",
+      "actual_units_sold": "1061",
+      "wape": "1.0178851587830544",
+      "mae": "0.2588629322791996",
+      "rmse": "0.7534226815561098"
+    },
+    {
+      "fold": "fold_2",
+      "dept_id": "HOUSEHOLD_1",
+      "row_count": "14896",
+      "actual_units_sold": "22008",
+      "wape": "0.6879357267185188",
+      "mae": "1.0163862428585635",
+      "rmse": "1.9632407544081945"
+    },
+    {
+      "fold": "fold_2",
+      "dept_id": "HOUSEHOLD_2",
+      "row_count": "14420",
+      "actual_units_sold": "6226",
+      "wape": "0.9254404095705798",
+      "mae": "0.39956948612943344",
+      "rmse": "0.8644417604268575"
+    },
+    {
+      "fold": "fold_3",
+      "dept_id": "FOODS_1",
+      "row_count": "6048",
+      "actual_units_sold": "9587",
+      "wape": "0.812725123688206",
+      "mae": "1.2882929498675315",
+      "rmse": "2.471268988537054"
+    },
+    {
+      "fold": "fold_3",
+      "dept_id": "FOODS_2",
+      "row_count": "11144",
+      "actual_units_sold": "15247",
+      "wape": "0.7515984440510263",
+      "mae": "1.0283220994657214",
+      "rmse": "1.8332182565517816"
+    },
+    {
+      "fold": "fold_3",
+      "dept_id": "FOODS_3",
+      "row_count": "23044",
+      "actual_units_sold": "65999",
+      "wape": "0.5754656243109647",
+      "mae": "1.6481581209381775",
+      "rmse": "3.367154180746214"
+    },
+    {
+      "fold": "fold_3",
+      "dept_id": "HOBBIES_1",
+      "row_count": "11648",
+      "actual_units_sold": "14054",
+      "wape": "0.8376346453143604",
+      "mae": "1.0106556752445073",
+      "rmse": "2.653566986289139"
+    },
+    {
+      "fold": "fold_3",
+      "dept_id": "HOBBIES_2",
+      "row_count": "4172",
+      "actual_units_sold": "1351",
+      "wape": "1.0087381139592104",
+      "mae": "0.32665512750692555",
+      "rmse": "0.8421423390809931"
+    },
+    {
+      "fold": "fold_3",
+      "dept_id": "HOUSEHOLD_1",
+      "row_count": "14896",
+      "actual_units_sold": "21223",
+      "wape": "0.7025727077098053",
+      "mae": "1.0009868807549138",
+      "rmse": "1.7477924626121295"
+    },
+    {
+      "fold": "fold_3",
+      "dept_id": "HOUSEHOLD_2",
+      "row_count": "14420",
+      "actual_units_sold": "6571",
+      "wape": "0.917921873633748",
+      "mae": "0.41828464851923425",
+      "rmse": "0.8553574954560463"
+    },
+    {
+      "fold": "all_folds",
+      "dept_id": "FOODS_1",
+      "row_count": "18144",
+      "actual_units_sold": "27060",
+      "wape": "0.7805411846254565",
+      "mae": "1.164100774689421",
+      "rmse": "2.2878880273672126"
+    },
+    {
+      "fold": "all_folds",
+      "dept_id": "FOODS_2",
+      "row_count": "33432",
+      "actual_units_sold": "45319",
+      "wape": "0.7438834635441117",
+      "mae": "1.008376845069263",
+      "rmse": "1.8710537742535664"
+    },
+    {
+      "fold": "all_folds",
+      "dept_id": "FOODS_3",
+      "row_count": "69132",
+      "actual_units_sold": "186597",
+      "wape": "0.5861334737927792",
+      "mae": "1.5820567582206682",
+      "rmse": "3.2147936134361683"
+    },
+    {
+      "fold": "all_folds",
+      "dept_id": "HOBBIES_1",
+      "row_count": "34944",
+      "actual_units_sold": "41023",
+      "wape": "0.8346848271369662",
+      "mae": "0.979889985795552",
+      "rmse": "2.620666544949175"
+    },
+    {
+      "fold": "all_folds",
+      "dept_id": "HOBBIES_2",
+      "row_count": "12516",
+      "actual_units_sold": "3577",
+      "wape": "1.0120100551762659",
+      "mae": "0.28922658735742274",
+      "rmse": "0.8001994697841889"
+    },
+    {
+      "fold": "all_folds",
+      "dept_id": "HOUSEHOLD_1",
+      "row_count": "44688",
+      "actual_units_sold": "65021",
+      "wape": "0.6767163696443877",
+      "mae": "0.9846217121072265",
+      "rmse": "1.8034657997045898"
+    },
+    {
+      "fold": "all_folds",
+      "dept_id": "HOUSEHOLD_2",
+      "row_count": "43260",
+      "actual_units_sold": "18636",
+      "wape": "0.9238704839310069",
+      "mae": "0.39799469113588176",
+      "rmse": "0.8487448886781793"
+    }
+  ],
+  "importance": [
+    {
+      "feature": "item_id",
+      "importance": "3162.3333333333335"
+    },
+    {
+      "feature": "rolling_mean_28",
+      "importance": "1548.0"
+    },
+    {
+      "feature": "rolling_std_28",
+      "importance": "937.3333333333334"
+    },
+    {
+      "feature": "rolling_mean_7",
+      "importance": "887.0"
+    },
+    {
+      "feature": "wday",
+      "importance": "547.0"
+    },
+    {
+      "feature": "lag_1",
+      "importance": "523.3333333333334"
+    },
+    {
+      "feature": "dept_id",
+      "importance": "470.6666666666667"
+    },
+    {
+      "feature": "weekday",
+      "importance": "271.3333333333333"
+    },
+    {
+      "feature": "snap_CA",
+      "importance": "161.0"
+    },
+    {
+      "feature": "lag_7",
+      "importance": "133.66666666666666"
+    },
+    {
+      "feature": "cat_id",
+      "importance": "118.33333333333333"
+    },
+    {
+      "feature": "lag_28",
+      "importance": "101.66666666666667"
+    },
+    {
+      "feature": "lag_14",
+      "importance": "68.0"
+    },
+    {
+      "feature": "is_event",
+      "importance": "57.666666666666664"
+    },
+    {
+      "feature": "month",
+      "importance": "12.666666666666666"
+    },
+    {
+      "feature": "year",
+      "importance": "0.0"
+    }
+  ],
+  "inventory": [
+    {
+      "policy": "fixed_historical",
+      "demand_units": 387233.0,
+      "stockout_units": 22675.606496087777,
+      "stockout_days": 8248,
+      "average_on_hand_units": 16.371978579991833,
+      "total_ordered_units": 287288.56881518406,
+      "fill_rate": 0.941441957436252
+    },
+    {
+      "policy": "stockwise",
+      "demand_units": 387233.0,
+      "stockout_units": 47142.20775764003,
+      "stockout_days": 19167,
+      "average_on_hand_units": 13.439755313240376,
+      "total_ordered_units": 229307.54865652986,
+      "fill_rate": 0.8782588060479348
+    }
+  ],
+  "sensitivity": [
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "69883.00272677187",
+      "stockout_days": "28998",
+      "average_on_hand_units": "10.552001382095838",
+      "total_ordered_units": "213210.90385100542",
+      "fill_rate": "0.8195324191719924"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "58184.74266544799",
+      "stockout_days": "23790",
+      "average_on_hand_units": "11.871449804448883",
+      "total_ordered_units": "221433.1869911644",
+      "fill_rate": "0.8497422929723242"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "48331.05430670725",
+      "stockout_days": "19676",
+      "average_on_hand_units": "13.250775704277899",
+      "total_ordered_units": "228454.18053072295",
+      "fill_rate": "0.875188699551156"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "40117.01013807041",
+      "stockout_days": "16113",
+      "average_on_hand_units": "14.682218597353959",
+      "total_ordered_units": "234373.12382628582",
+      "fill_rate": "0.8964008487446307"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "27832.672454763517",
+      "stockout_days": "10619",
+      "average_on_hand_units": "17.677610394350403",
+      "total_ordered_units": "243398.35882917157",
+      "fill_rate": "0.9281242237754438"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "59805.53621903001",
+      "stockout_days": "24607",
+      "average_on_hand_units": "11.670039481823629",
+      "total_ordered_units": "220288.73679482384",
+      "fill_rate": "0.8455567159332236"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "47142.20775764003",
+      "stockout_days": "19167",
+      "average_on_hand_units": "13.439755313240376",
+      "total_ordered_units": "229307.54865652986",
+      "fill_rate": "0.8782588060479348"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "37121.74464295867",
+      "stockout_days": "14775",
+      "average_on_hand_units": "15.293694776516315",
+      "total_ordered_units": "236546.4917380893",
+      "fill_rate": "0.9041358958483428"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "29372.178556783343",
+      "stockout_days": "11327",
+      "average_on_hand_units": "17.22018070923739",
+      "total_ordered_units": "242251.62066788576",
+      "fill_rate": "0.9241485654456533"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "18895.902975745554",
+      "stockout_days": "6824",
+      "average_on_hand_units": "21.226295726194667",
+      "total_ordered_units": "250424.78727885443",
+      "fill_rate": "0.9512027565425842"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "52184.39330458194",
+      "stockout_days": "21282",
+      "average_on_hand_units": "12.67567931885253",
+      "total_ordered_units": "225707.10647693858",
+      "fill_rate": "0.8652377423809903"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "39248.07501981536",
+      "stockout_days": "15764",
+      "average_on_hand_units": "14.85341885093948",
+      "total_ordered_units": "235003.614864243",
+      "fill_rate": "0.8986448081134217"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "29660.523545355085",
+      "stockout_days": "11422",
+      "average_on_hand_units": "17.137797719685455",
+      "total_ordered_units": "242037.59522915626",
+      "fill_rate": "0.9234039362725928"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "22650.706471796635",
+      "stockout_days": "8491",
+      "average_on_hand_units": "19.502620539263308",
+      "total_ordered_units": "247365.68623088708",
+      "fill_rate": "0.9415062598699062"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "14339.426880889772",
+      "stockout_days": "4917",
+      "average_on_hand_units": "24.3878555883692",
+      "total_ordered_units": "254839.5543111129",
+      "fill_rate": "0.9629695122035317"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "44492.33412087793",
+      "stockout_days": "18006",
+      "average_on_hand_units": "13.883199252611394",
+      "total_ordered_units": "231215.88949070344",
+      "fill_rate": "0.8851019047424215"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "31805.48027513529",
+      "stockout_days": "12347",
+      "average_on_hand_units": "16.5528503098504",
+      "total_ordered_units": "240450.63719400502",
+      "fill_rate": "0.9178647473868827"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "23046.167840149734",
+      "stockout_days": "8644",
+      "average_on_hand_units": "19.346194123560334",
+      "total_ordered_units": "247055.93419887684",
+      "fill_rate": "0.9404850107295873"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "17181.929386167416",
+      "stockout_days": "6115",
+      "average_on_hand_units": "22.221738798977032",
+      "total_ordered_units": "251963.24980953307",
+      "fill_rate": "0.9556289639928223"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "11288.610200383839",
+      "stockout_days": "3634",
+      "average_on_hand_units": "28.120551463645416",
+      "total_ordered_units": "258912.66087237227",
+      "fill_rate": "0.9708480160513597"
+    }
+  ],
+  "pareto": [
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "69883.00272677187",
+      "stockout_days": "28998.0",
+      "average_on_hand_units": "10.552001382095838",
+      "total_ordered_units": "213210.90385100542",
+      "fill_rate": "0.8195324191719924"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "59805.53621903001",
+      "stockout_days": "24607.0",
+      "average_on_hand_units": "11.670039481823629",
+      "total_ordered_units": "220288.73679482384",
+      "fill_rate": "0.8455567159332236"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "58184.74266544799",
+      "stockout_days": "23790.0",
+      "average_on_hand_units": "11.871449804448883",
+      "total_ordered_units": "221433.1869911644",
+      "fill_rate": "0.8497422929723242"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "52184.39330458194",
+      "stockout_days": "21282.0",
+      "average_on_hand_units": "12.67567931885253",
+      "total_ordered_units": "225707.10647693858",
+      "fill_rate": "0.8652377423809903"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "48331.05430670725",
+      "stockout_days": "19676.0",
+      "average_on_hand_units": "13.250775704277899",
+      "total_ordered_units": "228454.18053072295",
+      "fill_rate": "0.875188699551156"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "47142.20775764003",
+      "stockout_days": "19167.0",
+      "average_on_hand_units": "13.439755313240376",
+      "total_ordered_units": "229307.54865652986",
+      "fill_rate": "0.8782588060479348"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "0.75",
+      "demand_units": "387233.0",
+      "stockout_units": "44492.33412087793",
+      "stockout_days": "18006.0",
+      "average_on_hand_units": "13.883199252611394",
+      "total_ordered_units": "231215.88949070344",
+      "fill_rate": "0.8851019047424215"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "40117.01013807041",
+      "stockout_days": "16113.0",
+      "average_on_hand_units": "14.682218597353959",
+      "total_ordered_units": "234373.12382628582",
+      "fill_rate": "0.8964008487446307"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "39248.07501981536",
+      "stockout_days": "15764.0",
+      "average_on_hand_units": "14.85341885093948",
+      "total_ordered_units": "235003.614864243",
+      "fill_rate": "0.8986448081134217"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "37121.74464295867",
+      "stockout_days": "14775.0",
+      "average_on_hand_units": "15.293694776516315",
+      "total_ordered_units": "236546.4917380893",
+      "fill_rate": "0.9041358958483428"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "1.0",
+      "demand_units": "387233.0",
+      "stockout_units": "31805.48027513529",
+      "stockout_days": "12347.0",
+      "average_on_hand_units": "16.5528503098504",
+      "total_ordered_units": "240450.63719400502",
+      "fill_rate": "0.9178647473868827"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "29660.523545355085",
+      "stockout_days": "11422.0",
+      "average_on_hand_units": "17.137797719685455",
+      "total_ordered_units": "242037.59522915626",
+      "fill_rate": "0.9234039362725928"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "29372.178556783343",
+      "stockout_days": "11327.0",
+      "average_on_hand_units": "17.22018070923739",
+      "total_ordered_units": "242251.62066788576",
+      "fill_rate": "0.9241485654456533"
+    },
+    {
+      "service_level": "0.9",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "27832.672454763517",
+      "stockout_days": "10619.0",
+      "average_on_hand_units": "17.677610394350403",
+      "total_ordered_units": "243398.35882917157",
+      "fill_rate": "0.9281242237754438"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "1.25",
+      "demand_units": "387233.0",
+      "stockout_units": "23046.167840149734",
+      "stockout_days": "8644.0",
+      "average_on_hand_units": "19.346194123560334",
+      "total_ordered_units": "247055.93419887684",
+      "fill_rate": "0.9404850107295873"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "22650.706471796635",
+      "stockout_days": "8491.0",
+      "average_on_hand_units": "19.502620539263308",
+      "total_ordered_units": "247365.68623088708",
+      "fill_rate": "0.9415062598699062"
+    },
+    {
+      "service_level": "0.95",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "18895.902975745554",
+      "stockout_days": "6824.0",
+      "average_on_hand_units": "21.226295726194667",
+      "total_ordered_units": "250424.78727885443",
+      "fill_rate": "0.9512027565425842"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "1.5",
+      "demand_units": "387233.0",
+      "stockout_units": "17181.929386167416",
+      "stockout_days": "6115.0",
+      "average_on_hand_units": "22.221738798977032",
+      "total_ordered_units": "251963.24980953307",
+      "fill_rate": "0.9556289639928223"
+    },
+    {
+      "service_level": "0.975",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "14339.426880889772",
+      "stockout_days": "4917.0",
+      "average_on_hand_units": "24.3878555883692",
+      "total_ordered_units": "254839.5543111129",
+      "fill_rate": "0.9629695122035317"
+    },
+    {
+      "service_level": "0.99",
+      "safety_stock_multiplier": "2.0",
+      "demand_units": "387233.0",
+      "stockout_units": "11288.610200383839",
+      "stockout_days": "3634.0",
+      "average_on_hand_units": "28.120551463645416",
+      "total_ordered_units": "258912.66087237227",
+      "fill_rate": "0.9708480160513597"
+    }
+  ],
+  "methodology": [
+    "28-day rolling held-out backtests across M5 CA_1.",
+    "LightGBM uses lag, rolling, ID, and known calendar features only.",
+    "Forecasts are backtest results, not live predictions.",
+    "Inventory is a lost-sales scenario simulation; M5 has no observed inventory."
+  ],
+  "note": "M5 inventory results are scenario simulations, not observed inventory outcomes."
+}
