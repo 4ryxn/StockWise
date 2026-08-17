@@ -45,6 +45,6 @@ optimization, and model monitoring. Do not turn this project into another RAG ap
 
 The complete M5 `CA_1` pipeline has run successfully, producing 5,918,109 item-day rows and a
 quality report. Reproducible EDA artifacts, the fixed three-fold 7-day seasonal-naive,
-28-day-horizon baseline backtest, and leakage-safe demand features are complete. Next, train
-and compare one global LightGBM model using only features available at forecast time. M5 selling
-price is excluded because future prices are unknown, and it has not been imputed.
+28-day-horizon baseline backtest, leakage-safe demand features, and the fixed recursive global
+LightGBM backtest are complete. Next, review model results by department/category and begin
+scenario-based inventory work. M5 selling price is excluded because future prices are unknown.

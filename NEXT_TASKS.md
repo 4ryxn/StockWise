@@ -16,8 +16,8 @@
 - [x] Create reproducible EDA outputs and business KPIs.
 - [x] Evaluate the seasonal-naive baseline on rolling origins.
 - [x] Build leakage-safe lag and rolling-window features.
-- [ ] Train one global LightGBM model and track experiments.
-- [ ] Compare models overall and by department/category.
+- [x] Train one global LightGBM model and track experiments.
+- [x] Compare models overall and by department/category.
 
 ## Milestone 3 - Inventory decisions (Days 13-16)
 

@@ -53,3 +53,10 @@ retain known calendar fields, and exclude `sell_price`.
 
 **Reason:** Shifting before rolling prevents target leakage. Future M5 selling prices are not
 known when a forecast is made, so including them would make validation unrealistically optimistic.
+
+## ADR-008: Evaluate LightGBM recursively with a fixed recent-history window
+
+**Decision:** Train one global LightGBM model on the 730 most recent pre-cutoff days per fold and
+recursively feed predictions back into the 28-day forecast horizon.
+
+**Reason:** This matches forecast-time information availability and caps training-memory use.

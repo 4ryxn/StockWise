@@ -12,6 +12,7 @@ from stockwise.forecasting.features import (
     load_feature_input,
     write_feature_profile,
 )
+from stockwise.forecasting.lightgbm_backtest import write_lightgbm_artifacts
 from stockwise.forecasting.validation import RollingOriginSplit, rolling_origin_splits
 
 __all__ = [
@@ -25,4 +26,5 @@ __all__ = [
     "seasonal_naive_forecast",
     "write_baseline_artifacts",
     "write_feature_profile",
+    "write_lightgbm_artifacts",
 ]

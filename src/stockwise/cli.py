@@ -13,6 +13,7 @@ from stockwise.forecasting import (
     seasonal_naive_forecast,
     write_baseline_artifacts,
     write_feature_profile,
+    write_lightgbm_artifacts,
 )
 from stockwise.inventory import InventoryScenario, recommend_order
 
@@ -64,6 +65,12 @@ def main() -> None:
     feature_profile_parser.add_argument("processed_dir", type=Path)
     feature_profile_parser.add_argument("output_dir", type=Path)
 
+    lightgbm_parser = subparsers.add_parser(
+        "backtest-lightgbm", help="Run the global LightGBM backtest"
+    )
+    lightgbm_parser.add_argument("processed_dir", type=Path)
+    lightgbm_parser.add_argument("output_dir", type=Path)
+
     args = parser.parse_args()
     if args.command == "demo":
         run_demo()
@@ -83,3 +90,5 @@ def main() -> None:
         print(json.dumps(write_baseline_artifacts(args.processed_dir, args.output_dir), indent=2))
     elif args.command == "feature-profile":
         print(json.dumps(write_feature_profile(args.processed_dir, args.output_dir), indent=2))
+    elif args.command == "backtest-lightgbm":
+        print(json.dumps(write_lightgbm_artifacts(args.processed_dir, args.output_dir), indent=2))
