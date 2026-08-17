@@ -15,4 +15,6 @@ data/processed/*
 artifacts/*
 !artifacts/.gitkeep
 mlruns/
-
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*

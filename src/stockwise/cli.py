@@ -8,6 +8,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from stockwise.analysis import write_eda_artifacts
+from stockwise.dashboard_export import write_dashboard_data
 from stockwise.data import build_store_dataset, validate_m5_raw_files
 from stockwise.forecasting import (
     seasonal_naive_forecast,
@@ -86,6 +87,9 @@ def main() -> None:
     sensitivity_parser.add_argument("processed_dir", type=Path)
     sensitivity_parser.add_argument("prediction_path", type=Path)
     sensitivity_parser.add_argument("output_dir", type=Path)
+    export_parser = subparsers.add_parser("export-dashboard-data")
+    export_parser.add_argument("artifacts_dir", type=Path)
+    export_parser.add_argument("output_dir", type=Path)
 
     args = parser.parse_args()
     if args.command == "demo":
@@ -126,3 +130,5 @@ def main() -> None:
                 indent=2,
             )
         )
+    elif args.command == "export-dashboard-data":
+        print(json.dumps(write_dashboard_data(args.artifacts_dir, args.output_dir), indent=2))
