@@ -7,6 +7,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
+from stockwise.analysis import write_eda_artifacts
 from stockwise.data import build_store_dataset, validate_m5_raw_files
 from stockwise.forecasting import seasonal_naive_forecast
 from stockwise.inventory import InventoryScenario, recommend_order
@@ -43,6 +44,10 @@ def main() -> None:
     build_parser.add_argument("--store-id", default="CA_1")
     build_parser.add_argument("--chunk-size", type=int, default=250)
 
+    eda_parser = subparsers.add_parser("eda", help="Create EDA and data-quality artifacts")
+    eda_parser.add_argument("processed_dir", type=Path)
+    eda_parser.add_argument("output_dir", type=Path)
+
     args = parser.parse_args()
     if args.command == "demo":
         run_demo()
@@ -56,3 +61,5 @@ def main() -> None:
             item_chunk_size=args.chunk_size,
         )
         print(json.dumps(asdict(report), indent=2))
+    elif args.command == "eda":
+        print(json.dumps(write_eda_artifacts(args.processed_dir, args.output_dir), indent=2))
