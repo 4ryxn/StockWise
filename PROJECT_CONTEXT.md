@@ -47,4 +47,5 @@ The complete M5 `CA_1` pipeline has run successfully, producing 5,918,109 item-d
 quality report. Reproducible EDA artifacts, the fixed three-fold 7-day seasonal-naive,
 28-day-horizon baseline backtest, leakage-safe demand features, and the fixed recursive global
 LightGBM backtest and a lost-sales inventory scenario simulation are complete. Inventory results
-are simulations, not observed M5 inventory outcomes. Next, report service/holding trade-offs.
+are simulations, not observed M5 inventory outcomes. Inventory sensitivity exploration is complete;
+next, choose business assumptions before product work.

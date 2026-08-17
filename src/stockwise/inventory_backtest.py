@@ -23,10 +23,12 @@ DEFAULT_SCENARIO = {
 }
 
 
-def _order_up_to(mean: float, std: float, scenario: dict[str, object]) -> float:
+def _order_up_to(
+    mean: float, std: float, scenario: dict[str, object], safety_stock_multiplier: float = 1.0
+) -> float:
     protection = int(scenario["lead_time_days"]) + int(scenario["review_period_days"])
     z_score = NormalDist().inv_cdf(float(scenario["service_level"]))
-    return mean * protection + z_score * std * math.sqrt(protection)
+    return mean * protection + safety_stock_multiplier * z_score * std * math.sqrt(protection)
 
 
 def simulate_item_policy(
@@ -35,12 +37,13 @@ def simulate_item_policy(
     pre_fold_history: np.ndarray,
     policy: str,
     scenario: dict[str, object] = DEFAULT_SCENARIO,
+    safety_stock_multiplier: float = 1.0,
 ) -> dict[str, float | int | list[float]]:
     """Simulate one item with orders based only on prior observations and predictions."""
     lead_time, review = int(scenario["lead_time_days"]), int(scenario["review_period_days"])
     history = list(np.asarray(pre_fold_history, dtype=float)[-28:])
     initial_mean, initial_std = float(np.mean(history)), float(np.std(history, ddof=1))
-    on_hand = _order_up_to(initial_mean, initial_std, scenario)
+    on_hand = _order_up_to(initial_mean, initial_std, scenario, safety_stock_multiplier)
     incoming = np.zeros(len(actual) + lead_time, dtype=float)
     fulfilled = stockout_units = total_order = on_hand_sum = 0.0
     stockout_days = 0
@@ -51,7 +54,9 @@ def simulate_item_policy(
             observed = np.asarray(history[-28:], dtype=float)
             historical_mean, historical_std = float(observed.mean()), float(observed.std(ddof=1))
             if policy == "fixed_historical":
-                target = _order_up_to(historical_mean, historical_std, scenario)
+                target = _order_up_to(
+                    historical_mean, historical_std, scenario, safety_stock_multiplier
+                )
             elif policy == "stockwise":
                 remaining_predictions = predictions[day : day + lead_time + review]
                 padded = np.pad(
@@ -59,9 +64,13 @@ def simulate_item_policy(
                     (0, lead_time + review - len(remaining_predictions)),
                     constant_values=historical_mean,
                 )
-                target = float(padded.sum()) + NormalDist().inv_cdf(
-                    float(scenario["service_level"])
-                ) * historical_std * math.sqrt(lead_time + review)
+                target = (
+                    float(padded.sum())
+                    + NormalDist().inv_cdf(float(scenario["service_level"]))
+                    * historical_std
+                    * math.sqrt(lead_time + review)
+                    * safety_stock_multiplier
+                )
             else:
                 raise ValueError(f"Unknown policy: {policy}")
             order = max(0.0, target - (on_hand + incoming[day + 1 :].sum()))

@@ -17,6 +17,7 @@ from stockwise.forecasting import (
 )
 from stockwise.inventory import InventoryScenario, recommend_order
 from stockwise.inventory_backtest import write_inventory_artifacts
+from stockwise.inventory_sensitivity import write_inventory_sensitivity_artifacts
 
 
 def run_demo() -> None:
@@ -79,6 +80,13 @@ def main() -> None:
     inventory_parser.add_argument("prediction_path", type=Path)
     inventory_parser.add_argument("output_dir", type=Path)
 
+    sensitivity_parser = subparsers.add_parser(
+        "inventory-sensitivity", help="Explore inventory scenarios"
+    )
+    sensitivity_parser.add_argument("processed_dir", type=Path)
+    sensitivity_parser.add_argument("prediction_path", type=Path)
+    sensitivity_parser.add_argument("output_dir", type=Path)
+
     args = parser.parse_args()
     if args.command == "demo":
         run_demo()
@@ -104,6 +112,15 @@ def main() -> None:
         print(
             json.dumps(
                 write_inventory_artifacts(
+                    args.processed_dir, args.prediction_path, args.output_dir
+                ),
+                indent=2,
+            )
+        )
+    elif args.command == "inventory-sensitivity":
+        print(
+            json.dumps(
+                write_inventory_sensitivity_artifacts(
                     args.processed_dir, args.prediction_path, args.output_dir
                 ),
                 indent=2,

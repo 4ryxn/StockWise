@@ -23,7 +23,7 @@
 
 - [x] Convert forecast distributions into scenario inputs.
 - [x] Backtest the reorder policy against a fixed-rule policy.
-- [ ] Report stockout, holding-cost, and service-level tradeoffs.
+- [x] Report stockout, holding-cost, and service-level tradeoffs.
 
 ## Milestone 4 - Product and deployment (Days 17-25)
 

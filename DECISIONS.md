@@ -68,3 +68,11 @@ demand history, and compare fixed historical versus forecast-driven order-up-to 
 
 **Reason:** M5 has sales rather than inventory positions, receipts, or unmet demand; results must
 be labelled as scenario simulations.
+
+## ADR-010: Explore inventory service and safety-stock trade-offs separately
+
+**Decision:** Produce a Pareto frontier over fixed service-level and safety-stock scenarios without
+selecting a configuration from outer validation results.
+
+**Reason:** These are business assumptions, not forecasting hyperparameters, and must be chosen
+with stakeholders rather than optimized on the held-out folds.
