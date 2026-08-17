@@ -43,7 +43,7 @@ optimization, and model monitoring. Do not turn this project into another RAG ap
 
 ## Current status
 
-Foundation and data-ingestion code are complete. Core metrics, validation splits, baseline
-forecasting, inventory policy, M5 schema validation, chunked `CA_1` transformation, calendar
-and price joins, Parquet output, and a JSON quality report are covered by tests. Next, run the
-pipeline on the real M5 files and record its quality report before beginning EDA.
+The complete M5 `CA_1` pipeline has run successfully, producing 5,918,109 item-day rows and a
+quality report. Reproducible EDA artifacts and the fixed three-fold 7-day seasonal-naive,
+28-day-horizon baseline backtest are complete. Next, build leakage-safe lag and rolling-window
+features before training the single global LightGBM model. M5 price values have not been imputed.

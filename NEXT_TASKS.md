@@ -9,12 +9,12 @@
 - [x] Join calendar and selling-price features.
 - [x] Write processed Parquet partitions and a compact data-quality report.
 - [x] Add synthetic fixtures and integration tests for the data pipeline.
-- [ ] Run the pipeline on the complete M5 files and review the quality report.
+- [x] Run the pipeline on the complete M5 files and review the quality report.
 
 ## Milestone 2 - Analysis and forecasting (Days 4-12)
 
-- [ ] Create reproducible EDA outputs and business KPIs.
-- [ ] Evaluate the seasonal-naive baseline on rolling origins.
+- [x] Create reproducible EDA outputs and business KPIs.
+- [x] Evaluate the seasonal-naive baseline on rolling origins.
 - [ ] Build leakage-safe lag and rolling-window features.
 - [ ] Train one global LightGBM model and track experiments.
 - [ ] Compare models overall and by department/category.

@@ -9,7 +9,7 @@ from pathlib import Path
 
 from stockwise.analysis import write_eda_artifacts
 from stockwise.data import build_store_dataset, validate_m5_raw_files
-from stockwise.forecasting import seasonal_naive_forecast
+from stockwise.forecasting import seasonal_naive_forecast, write_baseline_artifacts
 from stockwise.inventory import InventoryScenario, recommend_order
 
 
@@ -48,6 +48,12 @@ def main() -> None:
     eda_parser.add_argument("processed_dir", type=Path)
     eda_parser.add_argument("output_dir", type=Path)
 
+    baseline_parser = subparsers.add_parser(
+        "backtest-baseline", help="Evaluate the seasonal-naive baseline on fixed validation folds"
+    )
+    baseline_parser.add_argument("processed_dir", type=Path)
+    baseline_parser.add_argument("output_dir", type=Path)
+
     args = parser.parse_args()
     if args.command == "demo":
         run_demo()
@@ -63,3 +69,5 @@ def main() -> None:
         print(json.dumps(asdict(report), indent=2))
     elif args.command == "eda":
         print(json.dumps(write_eda_artifacts(args.processed_dir, args.output_dir), indent=2))
+    elif args.command == "backtest-baseline":
+        print(json.dumps(write_baseline_artifacts(args.processed_dir, args.output_dir), indent=2))
