@@ -90,6 +90,7 @@ def main() -> None:
     export_parser = subparsers.add_parser("export-dashboard-data")
     export_parser.add_argument("artifacts_dir", type=Path)
     export_parser.add_argument("output_dir", type=Path)
+    export_parser.add_argument("--processed-dir", type=Path, default=Path("data/processed/ca_1"))
 
     args = parser.parse_args()
     if args.command == "demo":
@@ -131,4 +132,9 @@ def main() -> None:
             )
         )
     elif args.command == "export-dashboard-data":
-        print(json.dumps(write_dashboard_data(args.artifacts_dir, args.output_dir), indent=2))
+        print(
+            json.dumps(
+                write_dashboard_data(args.artifacts_dir, args.output_dir, args.processed_dir),
+                indent=2,
+            )
+        )
